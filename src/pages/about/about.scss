@@ -1,0 +1,10 @@
+@import "./../../sass/utils/variables-mixin";
+
+.about-container {
+  margin-bottom: 70px;
+}
+@media screen and (min-width: $desktop-min-width) {
+  .about-container {
+    margin-bottom: 130px;
+  }
+}

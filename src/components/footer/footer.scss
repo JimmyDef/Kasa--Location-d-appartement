@@ -1,0 +1,25 @@
+@import "./../../sass/utils/variables-mixin";
+footer {
+  height: 210px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+
+  img {
+    margin: 60px 0 20px;
+  }
+}
+
+@media screen and (min-width: $desktop-min-width) {
+  footer {
+    font-size: 22px;
+    img {
+      margin: 65px 0 30px;
+    }
+  }
+}

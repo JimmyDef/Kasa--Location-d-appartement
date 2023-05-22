@@ -1,0 +1,51 @@
+@import "./../../sass/utils/variables-mixin";
+.card {
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  height: 255px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  transition: all 250ms;
+  cursor: pointer;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  h2 {
+    z-index: 1;
+    padding: 20px;
+    position: absolute;
+    height: 70px;
+    bottom: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+  }
+  &::after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0) 60%,
+
+      rgba(0, 0, 0, 0.85)
+    );
+  }
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    height: 340px;
+    max-width: 350px;
+  }
+}

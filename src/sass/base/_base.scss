@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100%;
+  position: relative;
+  min-width: 375px;
+  color: $color-primary;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+
+  main {
+    margin: 0 auto;
+    max-width: $desktop-max-width;
+    padding: 0 20px 210px;
+  }
+}
+a {
+  text-decoration: none;
+  color: $color-primary;
+  &:hover {
+    cursor: pointer;
+  }
+}
+ul {
+  list-style-type: none;
+}

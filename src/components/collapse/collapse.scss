@@ -1,0 +1,138 @@
+@import "./../../sass/utils/variables-mixin.scss";
+
+.collapse {
+  margin: 0 auto 16px;
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 10px;
+  overflow: hidden;
+  font-weight: 400;
+
+  &__title-box {
+    height: 30px;
+    padding: 8px 12px;
+    display: flex;
+    background-color: $color-primary;
+    border-radius: 10px;
+    justify-content: space-between;
+    color: white;
+    cursor: pointer;
+
+    img {
+      margin: 0 12px;
+      transition: all 250ms;
+      width: 15px;
+      &.rotate-chevron {
+        transform: rotate(180deg);
+      }
+    }
+    h2 {
+      font-size: 13px;
+      font-weight: 500;
+    }
+  }
+
+  &__description {
+    min-height: 125px;
+    position: relative;
+    padding: 30px 12px 10px;
+    z-index: -1;
+    border-radius: 5px;
+    background-color: $color-bg;
+    transition: opacity 600ms;
+    transform: translateY(-15px);
+    &--hidden {
+      opacity: 0;
+      z-index: -1;
+      position: relative;
+      height: 0px;
+    }
+    p {
+      font-size: 12px;
+    }
+    ul {
+      li {
+        font-size: 12px;
+        margin-bottom: 4px;
+      }
+    }
+  }
+}
+@media screen and (min-width: $tablet-min-width) {
+  .collapse {
+    &__title-box {
+      height: 40px;
+      padding: 10px 12px;
+
+      h2 {
+        font-size: 18px;
+      }
+      img {
+        width: 20px;
+      }
+    }
+
+    &__description {
+      min-height: 0;
+      padding: 45px 12px 10px;
+      p {
+        font-size: 16px;
+      }
+      ul {
+        li {
+          font-size: 12px;
+        }
+      }
+    }
+    &.accomodation-collapse {
+      .collapse__description {
+        p {
+          font-size: 16px;
+        }
+        ul {
+          li {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: $desktop-min-width) {
+  .collapse {
+    &__title-box {
+      height: 47px;
+      padding: 1px 12px;
+      h2 {
+        margin-top: 10px;
+
+        font-size: 24px;
+      }
+    }
+    &__description {
+      p {
+        font-size: 20px;
+      }
+    }
+    &.accomodation-collapse {
+      .collapse__title-box {
+        height: 52px;
+        padding: 5px 12px;
+        h2 {
+          font-size: 18px;
+        }
+      }
+
+      .collapse__description {
+        p {
+          font-size: 18px;
+        }
+        ul {
+          li {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

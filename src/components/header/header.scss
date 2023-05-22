@@ -1,0 +1,66 @@
+@import "./../../sass/utils/variables-mixin";
+
+header {
+  margin: 20px auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: $desktop-max-width;
+
+  img {
+    width: 150px;
+  }
+  nav {
+    ul {
+      display: flex;
+      font-size: 13px;
+      li {
+        margin-left: 15px;
+        a {
+          &.active {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .uppercase {
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: $tablet-min-width) {
+  header {
+    img {
+      width: 210px;
+    }
+    nav {
+      ul {
+        li {
+          margin-left: 30px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  header img {
+    width: 210px;
+  }
+}
+
+@media screen and (min-width: $desktop-min-width) {
+  header {
+    nav {
+      ul {
+        li {
+          margin-left: 50px;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}

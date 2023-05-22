@@ -1,0 +1,68 @@
+@import "./../../sass/utils/variables-mixin";
+
+.carrousel {
+  height: 255px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0px 5px 10px rgb(71, 62, 61);
+
+  &__pictures {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__arrow {
+    position: absolute;
+    width: 20px;
+    transform: translateY(-50%);
+    top: 50%;
+    cursor: pointer;
+
+    &--left {
+      left: 5%;
+    }
+    &--right {
+      right: 5%;
+    }
+  }
+  &__counteur-box {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+
+    transform: translateX(-50%);
+    color: white;
+  }
+  p {
+    text-shadow: 1px 1px 2px black;
+    font-size: 24px;
+    display: none;
+  }
+}
+
+@media screen and (min-width: $tablet-min-width) {
+  .carrousel {
+    height: 400px;
+    margin-bottom: 30px;
+
+    &__arrow {
+      width: 30px;
+    }
+    p {
+      display: inline;
+    }
+  }
+}
+@media screen and (min-width: $desktop-min-width) {
+  .carrousel {
+    height: 400px;
+    &__arrow {
+      width: 40px;
+    }
+    p {
+    }
+  }
+}
