@@ -13,34 +13,19 @@ function Accomodation() {
   const { id } = useParams();
 
   const accomodations = useFetch(window.location.origin + "/data.json");
-  //
-  //Si Fetch OK : recherche de l'objet method .find()
-  //
+
   let accomodation;
   if (accomodations.fetchedData) {
     accomodation = accomodations.fetchedData.find((elt) => elt.id === id);
   }
-  //
-  //Si isLoading à TRUE : Affichage du composant loader (et de son Timer)
-  //
 
   if (accomodations.isLoading) {
-    console.log(accomodations.fetchedData);
     return <Loader />;
   }
 
-  //
-  //Si objet introuvable : retour 404
-  //
-
   if (!accomodation) {
     return <Navigate to="/notFound" />;
-  }
-
-  //
-  //Si tout est OK :
-  //
-  else {
+  } else {
     const rating = parseInt(accomodation.rating);
     const [forename, name] = accomodation.host.name.split(" ");
 
@@ -86,7 +71,7 @@ function Accomodation() {
             </div>
 
             {/* // 
-           //Création nom + mignature
+           //Création nom + avatar
            // */}
 
             <div className="accomodation-profil__host">
@@ -103,10 +88,6 @@ function Accomodation() {
             </div>
           </div>
         </section>
-
-        {/* // 
-           // Composant collapse x 2 
-           // */}
 
         <section className="accomodation-collapse-wrapper">
           <Collapse
@@ -126,5 +107,4 @@ function Accomodation() {
     );
   }
 }
-
 export default Accomodation;

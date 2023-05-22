@@ -6,7 +6,7 @@ import "./about.scss";
 function About() {
   return (
     <>
-      <Banner img={"img-mountain"} size={"banner--height"} />
+      <Banner img="img-mountain" size="banner--height" />
       <section className="about-container">
         {aboutUsData.map((data, idx) => (
           <Collapse

@@ -13,7 +13,7 @@ function Home() {
 
   return (
     <>
-      <Banner img={"img-cliff"} text={"Chez vous, partout et ailleurs"} />
+      <Banner img="img-cliff" text="Chez vous, partout et ailleurs" />
 
       {/* //
 // Loading (5sec max) ou display des cards avec leurs propriétés

@@ -7,6 +7,9 @@ function useFetch(url) {
   // State pour la récupération des données :
   const [fetchedData, setFetchedData] = useState([]);
 
+  if (fetchedData) {
+  }
+
   // State pour la gestion du loader :
   const [isLoading, setLoading] = useState(true);
 
