@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Kasa--Location-d-appartement/static/css/main.14072364.css",
-    "main.js": "/Kasa--Location-d-appartement/static/js/main.a1ddbb9a.js",
+    "main.js": "/Kasa--Location-d-appartement/static/js/main.8b9068fa.js",
     "static/media/background_mountain-min.png": "/Kasa--Location-d-appartement/static/media/background_mountain-min.bcc9b4fc4088b1287286.png",
     "static/media/background_cliff-min.png": "/Kasa--Location-d-appartement/static/media/background_cliff-min.b8d6a81aede1eaa4f207.png",
     "static/media/default_img_carrousel.png": "/Kasa--Location-d-appartement/static/media/default_img_carrousel.246c0085dc7d4dca2993.png",
@@ -10,10 +10,10 @@
     "static/media/chevron_carousel_right.svg": "/Kasa--Location-d-appartement/static/media/chevron_carousel_right.88153a5d119c2744ffe34dca1ef843df.svg",
     "static/media/chevron_carousel_left.svg": "/Kasa--Location-d-appartement/static/media/chevron_carousel_left.19918a1634b1441a25ae0b50e6b1f85b.svg",
     "main.14072364.css.map": "/Kasa--Location-d-appartement/static/css/main.14072364.css.map",
-    "main.a1ddbb9a.js.map": "/Kasa--Location-d-appartement/static/js/main.a1ddbb9a.js.map"
+    "main.8b9068fa.js.map": "/Kasa--Location-d-appartement/static/js/main.8b9068fa.js.map"
   },
   "entrypoints": [
     "static/css/main.14072364.css",
-    "static/js/main.a1ddbb9a.js"
+    "static/js/main.8b9068fa.js"
   ]
 }
