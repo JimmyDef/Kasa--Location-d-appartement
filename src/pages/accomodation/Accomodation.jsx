@@ -12,7 +12,9 @@ import useFetch from "./../../utils/useFetch";
 function Accomodation() {
   const { id } = useParams();
 
-  const accomodations = useFetch(window.location.origin + "/data.json");
+  const accomodations = useFetch(
+    "https://jimmydef.github.io/Kasa--Location-d-appartement/data.json"
+  );
 
   let accomodation;
   if (accomodations.fetchedData) {

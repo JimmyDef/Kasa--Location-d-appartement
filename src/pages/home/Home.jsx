@@ -9,7 +9,9 @@ function Home() {
   //utilisation du Hook personnalisé pour récupérer les "state" associés ( Fetch, loading)
   //--------------------------
 
-  const accomodations = useFetch(window.location.origin + "/data.json");
+  const accomodations = useFetch(
+    "https://jimmydef.github.io/Kasa--Location-d-appartement/data.json"
+  );
 
   return (
     <>
